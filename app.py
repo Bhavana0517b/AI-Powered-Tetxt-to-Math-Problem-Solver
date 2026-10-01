@@ -11,7 +11,7 @@ st.set_page_config(
     page_icon="🧮"
 )
 
-st.title("🧮 Text To Math Problem Solver Using Llama-3")
+st.title("🧮 AI-Powered Text-to-Math Problem Solver")
 st.write("Solve mathematical and logical reasoning problems with detailed explanations.")
 
 # ------------------------------
@@ -30,7 +30,7 @@ if not groq_api_key:
 # LLM
 # ------------------------------
 llm = ChatGroq(
-    model="llama-3.3-70b-versatile",
+    model="openai/gpt-oss-20b",
     groq_api_key=groq_api_key,
     temperature=0.2
 )
